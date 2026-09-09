@@ -1,5 +1,1 @@
-package salesreporter.service;
-
-public class SalesCalculator {
-    //member 1
-}
+//member 1
