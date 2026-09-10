@@ -1,3 +1,7 @@
 .idea/
 target/
 *.class
+*.iml
+.vscode/
+out/
+.DS_Store
