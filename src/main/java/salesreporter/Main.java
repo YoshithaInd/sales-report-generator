@@ -12,8 +12,23 @@ import salesreporter.service.SalesSummary;
 
 import java.util.List;
 
+/**
+ * Main command-line entry point for the Sales Report Generator application.
+ * <p>
+ * Responsibilities:
+ * <ul>
+ *   <li>Parse and validate command-line arguments.</li>
+ *   <li>Orchestrate the end-to-end reporting pipeline.</li>
+ *   <li>Handle exceptions gracefully without terminating with raw stack traces.</li>
+ * </ul>
+ */
 public class Main {
 
+    /**
+     * Application entry point.
+     *
+     * @param args command-line arguments: &lt;csv-file-path&gt; &lt;output-method&gt; [output-file-path]
+     */
     public static void main(String[] args) {
 
         // --- Validate arguments ---
