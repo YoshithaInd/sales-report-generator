@@ -48,18 +48,3 @@ public class SalesDataReader {
                     double price = Double.parseDouble(parts[4].trim());
 
                     products.add(new Product(id, name, category, qty, price));
-                } catch (NumberFormatException e) {
-                    throw new InvalidCsvException(
-                            "Row " + lineNumber + " has invalid numeric data: " + line);
-                }
-            }
-        }
-
-        if (products.isEmpty()) {
-            throw new InvalidCsvException("CSV file contains no product data.");
-        }
-
-        return products;
-    }
-}
-
