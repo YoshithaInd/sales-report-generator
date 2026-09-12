@@ -33,6 +33,9 @@ The application applies object-oriented best practices and **SOLID** principles:
 
 ## Command-Line Usage
 
+> ℹ️ **Note on Entry Point (`SalesReporter` vs `Main`)**:  
+> The assignment guidelines specify `java SalesReporter <csv-file-path> <output-method> [output-file-path]`. In our Maven project structure, standard Java packaging conventions are followed by organizing classes under the `salesreporter` package, with the entry point implemented in `salesreporter.Main`. The `pom.xml` build configuration sets `salesreporter.Main` as the executable JAR entry point.
+
 ### Syntax
 
 ```bash
