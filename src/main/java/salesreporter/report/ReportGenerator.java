@@ -4,8 +4,21 @@ import salesreporter.model.Product;
 import salesreporter.service.SalesSummary;
 import java.util.Map;
 
+/**
+ * Responsible for formatting sales summary data into the required
+ * human-readable ASCII summary report.
+ * <p>
+ * Adheres to the Single Responsibility Principle (SRP) by handling
+ * presentation and tabular layout exclusively.
+ */
 public class ReportGenerator {
 
+    /**
+     * Generates a formatted text report from the computed sales summary.
+     *
+     * @param summary the aggregated sales statistics
+     * @return a formatted string containing revenue per product, category totals, and highlights
+     */
     public String generate(SalesSummary summary) {
         StringBuilder sb = new StringBuilder();
 
